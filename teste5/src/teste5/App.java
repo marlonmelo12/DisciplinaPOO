@@ -2,6 +2,13 @@ package teste5;
 import java.util.Scanner;
 
 
+public class EntradaDadosException extends Exception{
+ public EntradaDadosException(String mensagem) {
+ super(mensagem);
+ }
+} 
+
+
 public class App {
 	public static String formatarCPF(String cpf) {
         return cpf.substring(0, 3) + "." + cpf.substring(3, 6) + "." + cpf.substring(6, 9) + "-" + cpf.substring(9);
